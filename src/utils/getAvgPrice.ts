@@ -1,7 +1,9 @@
-import { Home } from '../types/communityTypes';
+import { Home } from "../types/communityTypes";
 
 export const getAvgPrice = (homes: Home[], communityId: string): string => {
-  const communityHomes = homes.filter(home => home.communityId === communityId);
+  const communityHomes = homes.filter(
+    (home) => home.communityId === communityId
+  );
   if (communityHomes.length === 0) {
     return "No Average Price";
   }

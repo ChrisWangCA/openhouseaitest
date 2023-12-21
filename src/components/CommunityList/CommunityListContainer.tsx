@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Community, Home } from '../../types/communityTypes'; 
+import { Community, Home } from '../../types/communityTypes';
 import { fetchCommunities, fetchHomes } from '../../services/apiServices';
 import CommunityList from './CommunityList';
 
