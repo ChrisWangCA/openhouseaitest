@@ -11,7 +11,7 @@ interface CommunityListProps {
 
 
   const CommunityList = ({ communities, homes }: CommunityListProps) => {
-    const sortedCommunities = communities.sort((a, b) => a.name.localeCompare(b.name));
+    const sortedCommunities = (communities as Community[]).sort((a, b) => a.name.localeCompare(b.name));
     const handleImageError = (event:React.SyntheticEvent<HTMLImageElement, Event>) => {
         event.currentTarget.style.display = 'none'; 
       };
